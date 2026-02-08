@@ -1,0 +1,155 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "1698630759f1562bc3": {
+      "type": "apps",
+      "blocks": {
+        "4a70df89-666e-44d0-9ade-73f8df30217b": {
+          "type": "shopify://apps/judge-me-reviews/blocks/verified_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "judge_me_reviews_all_reviews_text_3KFQba": {
+          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "4a70df89-666e-44d0-9ade-73f8df30217b",
+        "judge_me_reviews_all_reviews_text_3KFQba"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-fast-delivery",
+            "title": "Fast, Free shipping",
+            "content": "<p>on U.S. orders over $39</p>"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-returns",
+            "title": "Easy Returns",
+            "content": "<p>generous 45 day policy</p>"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-heart",
+            "title": "Family Owned & Operated",
+            "content": "<p>mom, dad, son, & daughter</p>"
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-phone",
+            "title": "Great Customer Service",
+            "content": "<p><a href=\"https://supplementfirst.com/pages/email-us\" title=\"Email Us\">Email</a> or call 877-301-2969</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4"
+      ],
+      "settings": {
+        "stack_mobile": false
+      }
+    },
+    "17700634967c2a10df": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_all_reviews_text_jTrUpy": {
+          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_all_reviews_text_jTrUpy"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "text",
+          "settings": {
+            "title": "Help Center",
+            "content": "<p><a href=\"https://supplementfirst.com/account/login?ae_return_url=%2Fa%2Fcustomerhub\">Manage Order</a><br/><a href=\"https://supplementfirst.com/account/login?ae_return_url=%2Fa%2Fcustomerhub\">Manage Subscription</a><br/><a href=\"https://supplementfirst.com/pages/shipping-policy\">Shipping Policy</a><br/><a href=\"https://supplementfirst.com/pages/return-policy\">Return Policy</a></p><p><a href=\"https://supplementfirst.com/pages/email-us\" title=\"https://supplementfirst.com/pages/email-us\">Email Us Here</a></p><p>Call us: 877-301-2969 (9-4 ET)</p><p>Located in Cornelius, North Carolina</p>"
+          }
+        },
+        "links_MiEBLp": {
+          "type": "links",
+          "settings": {
+            "menu": "company-info"
+          }
+        },
+        "footer-1": {
+          "type": "links",
+          "settings": {
+            "menu": "policies-resources"
+          }
+        },
+        "footer-2": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Stay up to date",
+            "subheading": "<p>Receive notifications of new Healthy Living articles, sales, and product information<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "links_MiEBLp",
+        "footer-1",
+        "footer-2"
+      ],
+      "settings": {
+        "show_social_media": true,
+        "enable_follow_on_shop": false,
+        "show_payment_icons": true,
+        "show_locale_selector": false,
+        "show_country_selector": false
+      }
+    },
+    "17700633304103c847": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "1698630759f1562bc3",
+    "text-with-icons",
+    "17700634967c2a10df",
+    "footer",
+    "17700633304103c847"
+  ]
+}

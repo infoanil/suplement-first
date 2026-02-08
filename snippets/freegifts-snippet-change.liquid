@@ -1,0 +1,10 @@
+<script>
+  document.addEventListener('fg-gifts:updated', async () => {
+    upcartGetCart();
+    upcartRefreshCart();
+
+    if (document.querySelector('body').classList.contains('upcartPopupShow') != true) {
+      document.querySelector('.header__cart-toggle').click();
+    }
+  });
+</script>

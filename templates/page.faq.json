@@ -1,0 +1,125 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "separator-1": {
+          "type": "separator",
+          "settings": {
+            "title": "Returns & Shipping"
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "What is your return policy?",
+            "answer": "<p>Supplement First offers a 45-day return policy.  Refunds will be issued back to the original credit card used to make the purchase.  Products must be returned in same condition in which they were received.  Open products, probiotics and other refrigerated items cannot be returned.</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "How long will it take to get my order?",
+            "answer": "<p>Supplement First ships fast!  When we receive your order we will ship it out right away.</p><p>Orders to the East Coast and Midwest typically take 2-4 days to arrive.  Orders to the West Coast take 3-5 days to arrive.  All orders are sent via USPS First Class or USPS Priority Mail.</p><p>Shipping is Free on US orders over $39.  Shipments under $39 or international shipments incur a small fee.</p><p>We work hard to prevent any backorders.  However, occasionally back orders do occur.  We will do our best to make sure back orders are filled as quickly as possible.  We will notify the customer if a back order happens and will provide updates as to when the item will ship.</p>"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "How do I start a return?",
+            "answer": "<p>1) To start a return please send us a message via the <a href=\"https://supplementfirst.com/pages/email-us\" title=\"Email Us\">Email Us</a> form or email us at CustomerService@SupplementFirst.com.  Please be sure to include your order number, if possible.  Please be sure that your return meets the Return Policy Requirements listed below.</p><p>2) Upon return authorization, you will receive a prepaid USPS label via email. Print label.</p><p>3) Package your item in its’ original box/bag and affix USPS label. Be sure to remove or cover up any old labels. Drop in mailbox and you’re done!</p><p>4) Please allow 5-7 days for return to be processed and payment refunded.</p>"
+          }
+        },
+        "question_Y3VrUf": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "answer": "<p>We only ship to Canada and the US.</p><p>All international orders are shipped by <strong>FedEx International Shipping</strong></p><ul><li>Delivery time averages 5 to 7 business days</li><li>DHEA cannot be sent to Canada</li><li>Check with your country's customs agency for information regarding customs fees and import taxes</li></ul>"
+          }
+        },
+        "separator-2": {
+          "type": "separator",
+          "settings": {
+            "title": "Catalog"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "What kind of products does Supplement First offer?",
+            "answer": "<p>Supplement First offers a wide range of health and wellness products. This includes vitamins (like A, B, C, D, E), minerals, and various supplements such as DHEA, Melatonin, Berberine, Probiotics, NAC, CoQ10, and Fish Oils/Omega. They also focus on specific health concerns like bone support, brain and memory, cardiovascular support, and more.</p>"
+          }
+        },
+        "question-5": {
+          "type": "question",
+          "settings": {
+            "title": "Are the products from Supplement First safe and high quality?",
+            "answer": "<p>Yes, Supplement First prioritizes safety and quality in their products. They feature brands like Pure Encapsulations, which produce hypoallergenic, science-based supplements. These are free from common allergens (e.g., wheat, gluten, eggs, nuts, soy, dairy) and unnecessary additives. Their products undergo third-party testing for potency and purity.</p>"
+          }
+        },
+        "question_C3t4xN": {
+          "type": "question",
+          "settings": {
+            "title": "Does Supplement First offer products for specific dietary needs?",
+            "answer": "<p>Absolutely. Supplement First caters to various dietary requirements and sensitivities. For example, Pure Encapsulations offers hypoallergenic supplements, suitable for those with specific dietary restrictions.</p>"
+          }
+        },
+        "question_UqFeFx": {
+          "type": "question",
+          "settings": {
+            "title": "Can I find multivitamins at Supplement First?",
+            "answer": "<p>Yes, Supplement First offers a comprehensive range of multivitamins. They have specialized formulations for women, men, prenatal needs, children, and also options with or without iron.</p>"
+          }
+        },
+        "question_hMR8Cm": {
+          "type": "question",
+          "settings": {
+            "title": "What are some of the popular products at Supplement First?",
+            "answer": "<p>Popular products include the Pure Encapsulations O.N.E. Multivitamin, providing essential vitamins and antioxidants in a single pill. Another notable product is the Digestive Enzymes Ultra, a vegetarian blend aiding in the digestion of proteins, carbohydrates, and milk.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "separator-1",
+        "question-1",
+        "question-2",
+        "question-3",
+        "question_Y3VrUf",
+        "separator-2",
+        "question-4",
+        "question-5",
+        "question_C3t4xN",
+        "question_UqFeFx",
+        "question_hMR8Cm"
+      ],
+      "settings": {
+        "show_contact_info": true,
+        "contact_info_heading": "Any question?",
+        "contact_info_text": "<p>If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.</p>",
+        "contact_1_icon": "bi-phone",
+        "contact_1_heading": "Customer support",
+        "contact_1_text": "<p>877-301-2969</p>",
+        "contact_2_icon": "bi-email",
+        "contact_2_heading": "Send a message",
+        "contact_2_text": "<p><a href=\"/pages/email-us\" title=\"Email Us\">Email Us</a></p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq"
+  ]
+}

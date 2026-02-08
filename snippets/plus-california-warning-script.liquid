@@ -1,0 +1,69 @@
+{%- if product.tags contains settings.plus_warning_prop651_tag -%}
+  {%- assign plusWarningTag = settings.plus_warning_prop651_tag -%}
+{%- endif -%}
+{%- if product.tags contains settings.plus_warning_prop652_tag -%}
+  {%- assign plusWarningTag = settings.plus_warning_prop652_tag -%}
+{%- endif -%}
+
+{%- if plusWarningTag -%}
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      
+      const plusCaliforniaWarning = {
+        placement: document.querySelectorAll('.product-block-list__item--description .text--pull')[0],
+        productTag: {{ plusWarningTag | json }},
+        regionCode: {{ settings.plus_warning_region_code | json }},
+        style: {
+          backgroundColor: {{ settings.plus_warning_background_color | json }},
+          color: {{ settings.plus_warning_text_color | json }},
+          borderColor: {{ settings.plus_warning_border_color | json }}
+        },
+        text: [
+          {
+            tag: {{ settings.plus_warning_prop651_tag | json }},
+            heading: {{ 'plus.product_page_prop651_warning.title' | t | json }},
+            body: {{ 'plus.product_page_prop651_warning.text' | t | json }}
+          },
+          {
+            tag: {{ settings.plus_warning_prop652_tag | json }},
+            heading: {{ 'plus.product_page_prop652_warning.title' | t | json }},
+            body: {{ 'plus.product_page_prop652_warning.text' | t | json }}
+          }
+        ],
+        diplayMessage: (data, location = `unknown`) => {
+          let message = document.createElement('div');
+          let text = data.text.find((x) => x.tag === data.productTag );
+  
+          message.id = 'plusCaliforniaWarning';
+          message.style.backgroundColor = data.style.backgroundColor;
+          message.style.color = data.style.color;
+          message.style.borderColor = data.style.borderColor;
+          message.innerHTML = `
+            <span class='plus-warning__title'>${text.heading}</span>
+            <span class='plus-warning__body'>${text.body}</p>
+            `;
+
+          data.placement.parentNode.insertBefore(message, data.placement.nextSibling);
+        }
+      };
+
+      async function plusGeolocation() {
+        let response = await fetch('https://ipapi.co/json');
+        if (!response.ok) {
+          throw new Error(response.status);
+          return
+        }
+        return await response.json();
+      };
+
+      plusGeolocation().then((data) => {
+        if (data.region_code == plusCaliforniaWarning.regionCode){
+          plusCaliforniaWarning.diplayMessage(plusCaliforniaWarning, data.region_code)
+        }
+      }).catch((error) => {
+        plusCaliforniaWarning.diplayMessage(plusCaliforniaWarning);
+        console.warn(`There was an error fetching location information. A fall-back has been applied. Error code: ${error}`);
+      });
+    });
+  </script>
+{%- endif -%}

@@ -1,0 +1,114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "background": "#026211",
+        "text_color": "#ffffff",
+        "text": "Family Owned &amp; Operated Since 2010 <span class=\"us-shipping\">| Free Shipping on U.S. Orders over $39</span>",
+        "text_position": "center",
+        "link": "",
+        "show_newsletter": false,
+        "newsletter_button": "Subscribe & Save",
+        "newsletter_title": "Newsletter",
+        "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing</p>"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "edd6c0b5-d5f9-4eba-bb14-8721277ea970": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Brands",
+            "image_1_heading": "Your image",
+            "image_1_text": "Tell your story",
+            "image_1_link": "",
+            "image_2_heading": "Your image",
+            "image_2_text": "Tell your story",
+            "image_2_link": ""
+          }
+        },
+        "2ccf1303-3665-477f-b429-26fd79258739": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Vitamins & Supplements",
+            "image_1": "shopify://shop_images/top-picks-for-health4.jpg",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/top-supplements-for-good-health",
+            "image_2_heading": "Your image",
+            "image_2_text": "Tell your story",
+            "image_2_link": ""
+          }
+        },
+        "1adef532-b046-423b-b609-70bd2aafe9c0": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Health Concerns",
+            "image_1": "shopify://shop_images/top-picks-for-health4.jpg",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/top-supplements-for-good-health",
+            "image_2_heading": "Your image",
+            "image_2_text": "Tell your story",
+            "image_2_link": ""
+          }
+        },
+        "937beb9f-92a4-406a-be9f-cd5034cfdba3": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Customer Care",
+            "image_1": "shopify://shop_images/familyphoto5small.jpg",
+            "image_1_heading": "We look forward to serving you.",
+            "image_1_text": "- The Elliott family",
+            "image_1_link": "",
+            "image_2_heading": "Your image",
+            "image_2_text": "Tell your story",
+            "image_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "edd6c0b5-d5f9-4eba-bb14-8721277ea970",
+        "2ccf1303-3665-477f-b429-26fd79258739",
+        "1adef532-b046-423b-b609-70bd2aafe9c0",
+        "937beb9f-92a4-406a-be9f-cd5034cfdba3"
+      ],
+      "settings": {
+        "enable_sticky_header": true,
+        "logo": "shopify://shop_images/Logo-2019-400.png",
+        "logo_max_width": 240,
+        "mobile_logo_max_width": 155,
+        "show_locale_selector": false,
+        "show_country_selector": false,
+        "navigation_menu": "main-menu",
+        "navigation_mobile_menu": "",
+        "desktop_navigation_layout": "inline",
+        "desktop_navigation_open_trigger": "hover",
+        "show_navigation_social_media": false,
+        "navigation_phone_number": "",
+        "navigation_email": "",
+        "show_condensed_search": false,
+        "show_search_filter": false,
+        "search_menu": "",
+        "show_search_menu_title": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

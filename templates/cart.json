@@ -1,0 +1,101 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "blocks": {
+        "95e1a55c-0739-4a59-a2a7-f7c4b2dd8025": {
+          "type": "trust",
+          "disabled": true,
+          "settings": {
+            "icon": "bi-heart",
+            "title": "We love our customers",
+            "content": "<p>We are a small family run company.  Making sure our customers are happy is our top priority.  Please contact us if there is anything we can help with.  Thank you, Kevin Elliott</p>"
+          }
+        }
+      },
+      "block_order": [
+        "95e1a55c-0739-4a59-a2a7-f7c4b2dd8025"
+      ],
+      "settings": {
+        "enable_order_notes": true,
+        "show_payment_icons": true,
+        "gift_wrap_product": "",
+        "gift_wrap_text": "Do you want a gift wrap?",
+        "gift_wrap_button": "Add a gift wrap",
+        "show_shipping_estimator": false,
+        "shipping_estimator_default_country": "United States",
+        "trust_heading": "",
+        "upsell_heading": "Complete your cart",
+        "upsell_collection": "",
+        "upsell_products_count": 4
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    },
+    "16360482200950f537": {
+      "type": "text-with-icons",
+      "blocks": {
+        "16360482200950f537-2": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-customer-support",
+            "title": "Call us: 877-301-2969",
+            "content": "<p><a href=\"/pages/email-us\" title=\"Email Us\">Email us</a></p>"
+          }
+        },
+        "16360482200950f537-0": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-love",
+            "title": "Privacy Policy",
+            "content": "<p>We never share your information</p>"
+          }
+        },
+        "16360482200950f537-3": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-secure-payment",
+            "title": "Secure Payments",
+            "content": "<p>Our checkout is 100% secure</p>"
+          }
+        },
+        "16360482200950f537-1": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-returns",
+            "title": "Easy 45 Day Return Policy",
+            "content": "<p>Return for a full refund</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16360482200950f537-2",
+        "16360482200950f537-0",
+        "16360482200950f537-3",
+        "16360482200950f537-1"
+      ],
+      "settings": {
+        "stack_mobile": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recently-viewed-products",
+    "16360482200950f537"
+  ]
+}

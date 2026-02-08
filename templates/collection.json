@@ -1,0 +1,97 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1636616242152cd095": {
+      "type": "text-with-icons",
+      "blocks": {
+        "1636616242152cd095-0": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-fast-delivery",
+            "title": "Fast, Free Shipping",
+            "content": "<p>on U.S. orders over $39</p>"
+          }
+        },
+        "1636616242152cd095-1": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-returns",
+            "title": "Easy Returns",
+            "content": "<p>generous 45 day policy</p>"
+          }
+        },
+        "1636616242152cd095-2": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-heart",
+            "title": "Family Owned & Operated",
+            "content": "<p>mom, dad, son, & daughter</p>"
+          }
+        },
+        "1636616242152cd095-3": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-phone",
+            "title": "Great Customer Service",
+            "content": "<p><a href=\"/pages/email-us\" title=\"Email Us\">email</a> or call 877-301-2969</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1636616242152cd095-0",
+        "1636616242152cd095-1",
+        "1636616242152cd095-2",
+        "1636616242152cd095-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "stack_mobile": false
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_image": true,
+        "collection_image_size": "preserve_ratio",
+        "collapse_collection_description": true,
+        "products_per_row": "4",
+        "default_products_per_page": 24,
+        "default_view_layout": "grid",
+        "show_quick_buy": "list_grid",
+        "show_quick_view": "list_grid",
+        "quick_links": "",
+        "quick_links_show_products_count": true,
+        "show_filters": true,
+        "show_filter_color_swatch": false,
+        "open_group_filters_mode": "all_open"
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": true
+      }
+    },
+    "166779708715c594ec": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "1636616242152cd095",
+    "main",
+    "recently-viewed-products",
+    "166779708715c594ec"
+  ]
+}

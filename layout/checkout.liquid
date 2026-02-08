@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head><script 
+        id="script_tag_id"
+        data-last-check-status-key="_prevCheckIsOk"
+        data-last-check-timestamp-key="_prevCheckTimestamp"
+        data-refresh-interval-ms="120000"
+        data-script-src="https://d2fj3s7h83rb61.cloudfront.net/Gwv3Y8nKVe/bin"
+        data-app-info="1-1--1.13.0"
+        data-app-platform="1"
+        data-app-type="1"
+        data-app-version="1.13.0">
+    (function () {
+        var currentScript = document.currentScript;
+        var currentScriptDataset = currentScript.dataset;
+        var lastCheckStatusKey = currentScriptDataset.lastCheckStatusKey;
+        var lastCheckTimestampKey = currentScriptDataset.lastCheckTimestampKey;
+        var refreshIntervalMs = parseInt(currentScriptDataset.refreshIntervalMs, 10);
+        var scriptSrc = currentScriptDataset.scriptSrc;
+
+        if (lastCheckStatusKey && lastCheckTimestampKey && refreshIntervalMs && scriptSrc && !isNaN(refreshIntervalMs)) {
+            if (localStorage.getItem(lastCheckStatusKey) === null) {
+                localStorage.setItem(lastCheckStatusKey, String(false));
+            }
+            
+            if (localStorage.getItem(lastCheckTimestampKey) === null){
+                localStorage.setItem(lastCheckTimestampKey, String(0));
+            }
+
+            var locationHref = document.location.href;
+            var now = Date.now();
+            var lastCheckStatus = String(localStorage.getItem(lastCheckStatusKey)).toLowerCase() === 'true';
+            var lastCheckTimestamp = parseInt(localStorage.getItem(lastCheckTimestampKey), 10);
+
+            if (!isNaN(lastCheckTimestamp)) {
+                var needRefreshByInterval = now - lastCheckTimestamp > refreshIntervalMs;
+
+                if (needRefreshByInterval || lastCheckStatus) {
+                    var LOAD = 'load';
+                    var ERROR = 'error';
+                    var script = document.createElement('script');
+
+                    function scriptEventHandler(evt) {
+                        var target = evt.target;
+                        var evtType = evt.type;
+
+                        var currentCheckStatus = false;
+                        var currentCheckTimestamp = Date.now();
+
+                        if (evtType === LOAD) {
+                            currentCheckStatus = true;
+                        }
+
+                        localStorage.setItem(lastCheckStatusKey, String(currentCheckStatus));
+                        localStorage.setItem(lastCheckTimestampKey, String(currentCheckTimestamp));
+
+                        target.removeEventListener(LOAD, scriptEventHandler);
+                        target.removeEventListener(ERROR, scriptEventHandler);
+                    }
+
+                    if (!locationHref.match(/(\/checkouts\/|\/thank_you)/gi)) {
+                        script.defer = true;
+                    }
+
+                    script.addEventListener(LOAD, scriptEventHandler);
+                    script.addEventListener(ERROR, scriptEventHandler);
+
+                    script.src = scriptSrc;
+
+                    document.head.insertBefore(script, currentScript);
+                }
+            }
+        } else {
+            console.error('wrapper is not right configured');
+        }
+    })();
+</script>
+{% include 'limespot' %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <!-- Do not disable zooming and scaling as required for Accessibility (scale max adjusted to 5.0 and user-scalable enabled)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+    <!-- ADDRESS VALIDATOR -->
+<script async src="https://d3ox8tdk614ykk.cloudfront.net/pobox_checker.js"></script>
+    <link rel="stylesheet" href="{{ 'plus-checkout.css' | asset_url }}">
+  </head>
+  <body> 
+    
+<div class="plus-checkout-header header--inline" role="banner">
+  <div class="wrap">
+    <div class="plus-checkout-header__inner">
+      <div class="logo">
+        <div class="plus-checkout-header__logo">
+          <a href="/" class="plus-checkout-header__logo-link"><span class="visually-hidden">Supplement First</span>
+              <img class="plus-checkout-header__logo-image" style="max-width: 240px" src="//supplementfirst.com/cdn/shop/files/Logo-2019-400_240x@2x.png?v=1552111309" alt="Supplement First"></a>
+        </div>
+      </div>
+      <div class="plus-checkout-header__action-list">
+        <div class="header__action_item header__action_item--security">
+          <div class="plus-security__badge">
+            <svg width="201" height="266" viewBox="0 0 201 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M42 58.5C42 26.1914 68.1913 0 100.5 0C132.809 0 159 26.1913 159 58.5V98.4171H183.5C193.165 98.4171 201 106.252 201 115.917V247.917C201 257.582 193.165 265.417 183.5 265.417H17.5C7.83502 265.417 0 257.582 0 247.917V115.917C0 106.252 7.83502 98.4171 17.5 98.4171H42V58.5ZM57 98.4171H144V58.5C144 34.4756 124.524 15 100.5 15C76.4756 15 57 34.4756 57 58.5V98.4171ZM15 115.917C15 114.536 16.1193 113.417 17.5 113.417H183.5C184.881 113.417 186 114.536 186 115.917V247.917C186 249.298 184.881 250.417 183.5 250.417H17.5C16.1193 250.417 15 249.298 15 247.917V115.917Z" fill="black"></path>
+              </svg>              
+            <span>Secure checkout</span>
+          </div>
+        </div>
+          <div class="header__action-item header__action-item--account">
+            <div class="header__action-item-content">
+              <a class="plus-header__phone hidden-pocket hidden-lap" href="tel:877-301-2969" title="877-301-2969">
+              877-301-2969
+              </a>
+              <a class="plus-header__email hidden-pocket hidden-lap" href="/pages/email-us" title="Email Us">
+                Email Us
+              </a>
+            </div>
+          </div></div>
+    </div>
+  </div>
+</div>
+ 
+    <header class="banner" data-header role="banner">
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </header>
+
+    {{ order_summary_toggle }}
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            <!--{{ content_for_logo }}-->
+            {{ breadcrumb }}
+            {{ alternative_payment_methods }}
+          </header>
+          <main class="main__content" role="main">
+            {{ content_for_layout }}
+          </main>
+          <footer class="main__footer" role="contentinfo">
+            {{ content_for_footer }}
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+            <limespot></limespot>
+{{ content_for_order_summary }}
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    {{ tracking_code }}
+  </body>
+</html>
